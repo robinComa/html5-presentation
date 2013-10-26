@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "IE-DINNextLTPro-MediumCond";
+    src: url("fonts/DINNextLTPro-MediumCond.eot");
+    src: local("☺"),
+    url("fonts/DINNextLTPro-MediumCond.woff") format("woff"),
+    url("fonts/DINNextLTPro-MediumCond.ttf") format("truetype");
+}

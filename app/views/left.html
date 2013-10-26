@@ -1,0 +1,27 @@
+<div class="hidden-xs">
+
+    <a href="http://www.sqli.com/" target="_blank">
+        <img src="img/sqli-logo.jpg"/>
+    </a>
+
+    <hr>
+
+    <p class="text-danger">{{title}}</p>
+
+    <hr>
+
+    <div class="list-group">
+        <a ng-click="beforeActiveFn()" href="" ng-show="hasBefore()" class="list-group-item">
+            <h3 ng-hide="afterActive || beforeActive">...</h3>
+            <h3 ng-show="afterActive || beforeActive">v</h3>
+        </a>
+        <a ng-show="isShow($index)" href="" ng-click="navigate($index)" ng-repeat="section in sections" class="list-group-item" ng-class="{'active': isActive($index)}">
+            <h3 ng-class="{'done':isDone($index)}">{{getTitle($index)}}</h3>
+        </a>
+        <a ng-click="afterActiveFn()" href="" ng-show="hasAfter()" class="list-group-item">
+            <h3 ng-hide="afterActive || beforeActive">...</h3>
+            <h3 ng-show="afterActive || beforeActive">^</h3>
+        </a>
+    </div>
+
+</div>
